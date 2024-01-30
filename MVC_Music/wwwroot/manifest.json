@@ -1,0 +1,17 @@
+{
+  "name": "MVC Music",
+  "short_name": "MVC. Music",
+  "description": "The best application -Ker",
+  "icons": [
+    {
+      "src": "/images/MMusic_icon192x192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/MMusic_icon512x512.png",
+      "sizes": "512x512"
+    }
+  ],
+  "display": "standalone",
+  "start_url": "/"
+}

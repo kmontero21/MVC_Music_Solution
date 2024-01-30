@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MVC_Music.ViewModels.PerformanceReportsVM>
+
+@{
+    ViewData["Title"] = "Performance Summary";
+}
+
+<h2>Performance Summary</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MusicianFormalName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumberOfPerformances)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AverFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HighFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LowFee)
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                    @Html.DisplayFor(modelItem => item.MusicianFormalName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfPerformances)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AverFee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HighFee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LowFee)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
